@@ -1,0 +1,40 @@
+a = input("Masukan Angka: ")
+b = input("Masukan Angka Yang Dihilangkan: ")
+
+angka = a.split()
+angka = [int(i) for i in angka]
+
+
+rata1 = (sum(angka))/len(angka)
+print("Nilai Rata-Rata Dari List 1 Adalah: ", rata1)
+
+
+
+def maxz():
+	maxs = angka[0]
+	for i in angka:
+		if i > maxs:
+			maxs = i
+	print("Nilai Maximum Dari List 1 adalah: ", maxs)
+
+def minz():
+	mins = angka[0]
+	for i in angka:
+		if i < mins:
+			mins = i
+	print("Nilai Minimum Dari List 1 adalah: ", mins)
+
+def sisa1():
+	ziza = []
+	for i in angka:
+		if i < rata1:
+			ziza = ziza + [i]
+	print("Angka Yang Di Bawah Rata-Rata Adalah: ", len(ziza))		
+
+
+
+
+
+maxz()
+minz()
+sisa1()
